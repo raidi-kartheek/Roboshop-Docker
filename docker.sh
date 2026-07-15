@@ -18,7 +18,7 @@ usermod -aG docker ec2-user
 # Grow partition
 sudo growpart /dev/ nvme0n1 4
 sudo lvextend -L +10G /dev/mapper/RootVG-rootVol
-sudo lvextend -L +10G /dev/mapper/RootVG-homeVol
+sudo lvextend -L +10G /dev/mapper/RootVG-rootVol
 sudo lvextend -L +10G /dev/mapper/RootVG-varVol
 
 sudo xfs_growfs /var
