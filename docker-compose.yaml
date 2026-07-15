@@ -56,7 +56,7 @@ services:
     - payment
   mongodb:
     build: ./mongodb
-    image: joindevops/mongodb:v1 # docker build -t joindevops/mongodb:v1
+    image: raidi/mongodb:1.0.0 # docker build -t joindevops/mongodb:v1
     container_name: mongodb # docker run -d --network roboshop joindevops/mongodb:v1
     volumes:
     - mongodb:/data/db # mongodb stores data in /data/db directory
